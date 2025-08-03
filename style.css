@@ -2,7 +2,8 @@
             --primary: #3A50A3;
             --secondary:  #C1292E;
             --light: #F7F8F8;
-            --dark: #252525;
+            --dark: hsl(0, 0%, 15%);
+            --gray: #dad0d0;
         }
 
         * {
@@ -46,13 +47,22 @@
         }
 
         .logo {
-            font-weight: 700;
-            font-size: 24px;
-            color: var(--primary);
+            max-height: 50px;
+            width: auto;
         }
 
-        .logo span {
-            color: var(--accent);
+        .logo-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .name{
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: 800;
         }
 
         nav ul {
@@ -77,7 +87,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080?text=Université+Abomey-Calavi');
+            background: linear-gradient(135deg, var(--primary) 0%, #006e43 100%);
             background-size: cover;
             background-position: center;
             color: white;
@@ -97,13 +107,26 @@
             margin: 0 auto 30px;
         }
 
+        #test-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--light);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
             background-color: var(--primary);
             color: var(--light);
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 10px;
             font-weight: 600;
             transition: all 0.3s;
             border: none;
@@ -123,7 +146,7 @@
 
         .btn-outline:hover {
             background: var(--light);
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         /* Story Section */
@@ -136,6 +159,7 @@
             text-align: center;
             margin-bottom: 50px;
             position: relative;
+            font-size: 2rem;
         }
 
         .section-title:after {
@@ -143,6 +167,7 @@
             display: block;
             width: 80px;
             height: 4px;
+            border-radius: 25px;
             background: var(--secondary);
             margin: 15px auto 0;
         }
@@ -152,7 +177,7 @@
             margin: 0 auto;
             background-color: var(--light);
             padding: 40px;
-            border-radius: 8px;
+            border-radius: 50px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             position: relative;
         }
@@ -195,7 +220,7 @@
 
         .card {
             background: var(--light);
-            border-radius: 8px;
+            border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: transform 0.3s;
@@ -252,12 +277,12 @@
             text-align: center;
             padding: 30px;
             background: var(--light);
-            border-radius: 8px;
+            border-radius: 20px;
             transition: all 0.3s;
         }
 
         .feature:hover {
-            background: var(--light);
+            background: var(--gray);
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
@@ -290,7 +315,7 @@
             text-align: center;
             padding: 30px;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
+            border-radius: 25px;
             backdrop-filter: blur(10px);
         }
 
