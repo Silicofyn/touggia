@@ -1,36 +1,365 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Touggia – Billets & Menus simplifiés</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 2rem;
-      background-color: #f5f5f5;
-    }
-    h1 {
-      color: #333;
-    }
-    a {
-      display: inline-block;
-      margin: 1rem;
-      padding: 0.5rem 1rem;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Touggia</h1>
-  <p>Une plateforme pour acheter vos billets et menus en toute simplicité.</p>
-  <p>Projet relancé en 2025 après 3 ans de pause.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touggia - Solution de billeterie digitale pour le Bénin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="benin-flag"></div>
 
-  <a href="https://github.com/tonpseudo/touggia" target="_blank">Voir le projet GitHub</a>
-  <a href="mailto:ton@email.com">Me contacter</a>
-</body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-title">
+            <img src="logo.png" alt="Logo Touggia" class="logo" />
+            <h1 class="name">TOUGGIA</h1>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#histoire">Notre Histoire</a></li>
+              <li><a href="#solution">La Solution</a></li>
+              <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+              <li><a href="#avantages">Avantages</a></li>
+              <li><a href="#testeurs">Devenir Testeur</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="accueil">
+      <div class="container">
+        <h1>Libérez-vous des files d'attente et des fraudes avec Touggia</h1>
+        <p>
+          La solution digitale qui simplifie l'achat de billets pour les
+          transports et restaurants
+        </p>
+        <div class="hero-buttons">
+          <a href="#testeurs" class="btn" id="test-btn">Devenir testeur</a>
+          <a href="#solution" class="btn btn-outline">Découvrir la solution</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="histoire">
+      <div class="container">
+        <h2 class="section-title">Notre Histoire</h2>
+        <div class="story-content">
+          <p>
+            Tout a commencé par la frustration d'un frère qui devait faire la
+            queue chaque jour sous le soleil brûlant d'Akpakpa pour prendre le
+            bus universitaire à destination d'Abomey-Calavi. À 100F CFA, ce bus
+            était sa seule option abordable, mais l'attente interminable lui
+            volait des heures précieuses.
+          </p>
+          <p>
+            La même galère se répétait à la cantine universitaire où des
+            étudiants, affamés, devaient faire la queue pour obtenir leur repas.
+            Beaucoup finissaient par renoncer, manquant ainsi leur seul repas de
+            la journée.
+          </p>
+          <p>
+            C'est de cette
+            <span class="highlight">souffrance quotidienne</span> qu'est née
+            l'idée de Touggia. Une plateforme simple qui permettrait aux
+            étudiants d'acheter leurs billets de bus et de restaurant en
+            quelques clics, sans perdre des heures en file d'attente.
+          </p>
+          <p>
+            Malheureusement, malgré nos efforts débutés en 2021, la direction du
+            service des bus et restaurants (COUS-AC) de l'université n'a pas
+            donné suite à notre projet. Mais aujourd'hui, nous reprenons le
+            flambeau pour offrir Touggia à
+            <span class="highlight">toutes les entreprises et personnes</span>
+            qui en ont besoin !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution" id="solution">
+      <div class="container">
+        <h2 class="section-title">C'est quoi Touggia ?</h2>
+        <p class="text-center" style="max-width: 800px; margin: 0 auto 50px">
+          Touggia est une solution qui simplifie la gestion et l'achat de
+          billets pour les transports et restaurants, conçue spécialement pour
+          les réalités locales.
+        </p>
+
+        <div class="solution-cards">
+          <div class="card">
+            <div class="card-header">
+              Pour les Administrations et Entreprises
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  Créez et gérez facilement vos billets depuis votre ordinateur
+                </li>
+                <li>Suivez en temps réel les progressions des achats</li>
+                <li>Gérez les heures de départ et disponibilités</li>
+                <li>
+                  Générez automatiquement des listes d'embarquement bien
+                  ordonnées
+                </li>
+                <li>Accédez à des rapports sur vos ventes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Pour les Clients</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  Achetez des billets en quelques clics depuis votre téléphone
+                </li>
+                <li>Consultez les disponibilités en temps réel</li>
+                <li>
+                  Réglez vos heures et recevez des alertes pour ne pas rater vos
+                  départs
+                </li>
+                <li>Accédez facilement aux menus et prix des restaurants</li>
+                <li>
+                  Billets sécurisés avec code unique facilement vérifiable
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="fonctionnalites">
+      <div class="container">
+        <h2 class="section-title">Fonctionnalités principales</h2>
+
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">📋</div>
+            <h3>Création de billets</h3>
+            <p>
+              Créez le nombre de billets souhaité et mettez-les en ligne quand
+              vous voulez.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">📊</div>
+            <h3>Suivi en temps réel</h3>
+            <p>
+              Visualisez le nombre de billets achetés et restants à tout moment.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">⏱️</div>
+            <h3>Programmation des départs</h3>
+            <p>
+              Planifiez jusqu'à 100 heures de départs différents pour vos
+              clients.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🍛</div>
+            <h3>Gestion des menus</h3>
+            <p>
+              Ajoutez des repas avec prix, détails et jours de disponibilité.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">📋</div>
+            <h3>Listes automatiques</h3>
+            <p>
+              Générez automatiquement des listes d'achats avant chaque départ.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">📱</div>
+            <h3>Application client</h3>
+            <p>
+              Vos clients consultent disponibilités, prix et achètent
+              facilement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="value" id="avantages">
+      <div class="container">
+        <h2 class="section-title" style="color: white">
+          Ce que Touggia apporte en plus
+        </h2>
+
+        <div class="value-grid">
+          <div class="value-item">
+            <div class="icon">✨</div>
+            <h3>Adapté aux réalités locales</h3>
+            <p>
+              Conçu spécifiquement pour les besoins et contraintes du marché
+              local.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="icon">🧭</div>
+            <h3>Éthique et transparent</h3>
+            <p>
+              Prix clairs sans frais cachés, respect de la législation locale.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="icon">🪶</div>
+            <h3>Léger et rapide</h3>
+            <p>
+              Fonctionne même sur les smartphones bas de gamme et connexions
+              limitées.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="icon">🔐</div>
+            <h3>Sécurisé et vérifiable</h3>
+            <p>
+              Code unique facilement lisible, pas besoin de scanner compliqué.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="icon">🧠</div>
+            <h3>Né du terrain</h3>
+            <p>
+              Solution créée pour résoudre une vraie problématique vécue au
+              quotidien.
+            </p>
+          </div>
+
+          <div class="value-item">
+            <div class="icon">🚀</div>
+            <h3>Économique</h3>
+            <p>
+              Réduit les coûts opérationnels et limite les pertes dues à la
+              fraude.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="testeurs">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Rejoignez les premiers testeurs de Touggia !</h2>
+          <p>
+            Laissez-nous votre email pour recevoir la démo ou être parmi les
+            premiers à tester Touggia dès son lancement.
+          </p>
+
+          <form action="https://formsubmit.co/touggia@gmail.com" method="POST">
+            <!-- Protection anti-spam -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nouvel email testeur Touggia"
+            />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre adresse email"
+                required
+              />
+            </div>
+            <button type="submit" class="btn">Je veux tester Touggia</button>
+          </form>
+
+          <p style="margin-top: 30px; font-size: 0.9rem">
+            <a
+              href="https://github.com/votreprojet"
+              target="_blank"
+              style="color: var(--primary)"
+              >Voir le projet sur GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>TOUGGIA</h3>
+            <p>
+              Solution de billeterie digitale conçue au Bénin pour résoudre les
+              problèmes d'attente dans les transports et restaurants.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="#histoire">Notre Histoire</a></li>
+              <li><a href="#solution">La Solution</a></li>
+              <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+              <li><a href="#avantages">Avantages</a></li>
+              <li><a href="#testeurs">Devenir Testeur</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: touggia@gmail.com</li>
+              <li>Téléphone: +229 01 67 83 99 98</li>
+              <li>Péhunco et Cotonou, Bénin</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          &copy; 2025 TOUGGIA. Optimisé par SILIDDOR. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Form submission
+      const form = document.querySelector("form");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          if (email) {
+            alert(
+              `Merci ! Nous vous contacterons à l'adresse ${email} lorsque Touggia sera disponible.`
+            );
+            this.reset();
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
