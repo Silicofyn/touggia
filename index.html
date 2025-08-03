@@ -348,7 +348,6 @@
       const form = document.querySelector("form");
       if (form) {
         form.addEventListener("submit", function (e) {
-          e.preventDefault();
           const email = this.querySelector('input[type="email"]').value;
           if (email) {
             alert(
